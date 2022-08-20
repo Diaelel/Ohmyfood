@@ -1,3 +1,5 @@
+@use "../utils/colors.scss";
+
 .header {
     box-shadow: 0 0 0.5Srem rgba(0, 0, 0, 0.25);
     position: relative;
@@ -9,6 +11,6 @@
     margin: 0;
     padding-top: 10px;
     padding-bottom: 10px;
-    box-shadow: 0.25rem 0.25rem 0.5rem #686868;
+    box-shadow: 0.25rem 0.25rem 0.5rem colors.$darlgray;
     }
 }   
