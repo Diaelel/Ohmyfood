@@ -1,0 +1,14 @@
+.location {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem 1rem;
+    background-color: #eaeaea;
+    font-size: 1.1rem;
+    position: relative;
+    align-items: baseline;
+    & i {
+        font-size: larger;
+        margin-right: 15px;
+    }
+}

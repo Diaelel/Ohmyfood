@@ -1,0 +1,33 @@
+.explorer__restaurants {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f7f7f7;
+  padding-bottom: 4.2rem;
+}
+.explorer__restaurants--title {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 5px 10px 15px 10px;
+}
+.explorer__restaurants--paragraph {
+  color: #6a6a6a;
+  margin: 0 0rem 2.7rem 0;
+  font-size: 1.1rem;
+}
+.explorer__restaurants--btn {
+  padding-top: s20px;
+  padding: 0.9rem 1.2rem;
+  font-weight: 500;
+  border-radius: 100px;
+  color: #fff;
+  background-color: #686868;
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+}
+.explorer__restaurants--btn:hover {
+  transform: scale(1.02);
+  opacity: 1;
+  transition-duration: 180ms;
+  cursor: pointer;
+  background-color: rgba(240, 228, 255, 0.9);
+}/*# sourceMappingURL=explorer.css.map */
