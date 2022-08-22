@@ -8,7 +8,6 @@
 
 .body {
   margin: 0 auto;
-  max-width: 1400px;
   font-family: "roboto", sans-serif;
 }
 
@@ -118,7 +117,7 @@ a {
   border-radius: 10px;
   padding-top: 7px;
 }
-@media (min-width: 880px) {
+@media (min-width: 768px) {
   .steps__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -128,7 +127,7 @@ a {
   display: flex;
   align-items: baseline;
   border: solid 1px #f5f5f5;
-  padding: 7px 0px;
+  padding: 25px 0px;
   background-color: #f5f5f5;
   border-radius: 25px;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
@@ -164,15 +163,21 @@ a {
 
 .menus {
   background-color: #f6f6f6;
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+}
+.menus h2 {
+  margin-left: 22px;
 }
 .menus .menus__cards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  gap: 1.3rem;
+  margin-right: 20px;
+  margin-left: 20px;
 }
-@media (max-width: 1000px) {
+@media (min-width: 768px) {
   .menus .menus__cards {
-    grid-template-columns: repeat 1, 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 .menus .menus__cards .new {
@@ -191,7 +196,7 @@ a {
   top: 1rem;
 }
 .menus .card__image {
-  height: 15rem;
+  height: 12rem;
   background-size: cover;
   border-radius: 1rem 1rem 0 0;
 }
@@ -209,13 +214,16 @@ a {
 }
 .menus .card__description {
   position: relative;
+  background-color: white;
+  border-radius: 0 0 1rem 1rem;
 }
-.menus .card__description h3,
-.menus .card__description p {
-  margin: 0.5rem;
+.menus .card__description h3 {
+  padding-top: 0.8rem;
+  padding-left: 1rem;
 }
 .menus .card__description p {
-  padding-top: 0.5rem;
+  padding: 0.4rem 0 1rem 0;
+  padding-left: 1rem;
 }
 .menus .card__description i {
   font-size: 2rem;
@@ -223,4 +231,32 @@ a {
   right: 1rem;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.7098039216);
+}
+.footer__logo {
+  font-family: "Shrikhand", "cursive";
+  color: white;
+  margin: 6px 6px 10px;
+}
+.footer__listing {
+  list-style: none;
+  padding-left: 8px;
+  margin: 6px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.footer__link {
+  text-decoration: none;
+  color: white;
+}
+.footer__icon {
+  width: 1rem;
+  margin-right: 0.5rem;
 }/*# sourceMappingURL=style.css.map */

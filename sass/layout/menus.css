@@ -1,14 +1,20 @@
 .menus {
   background-color: #f6f6f6;
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+}
+.menus h2 {
+  margin-left: 22px;
 }
 .menus .menus__cards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  gap: 1.3rem;
+  margin-right: 20px;
+  margin-left: 20px;
 }
-@media (max-width: 1000px) {
+@media (min-width: 768px) {
   .menus .menus__cards {
-    grid-template-columns: repeat 1, 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 .menus .menus__cards .new {
@@ -27,7 +33,7 @@
   top: 1rem;
 }
 .menus .card__image {
-  height: 15rem;
+  height: 12rem;
   background-size: cover;
   border-radius: 1rem 1rem 0 0;
 }
@@ -45,13 +51,16 @@
 }
 .menus .card__description {
   position: relative;
+  background-color: white;
+  border-radius: 0 0 1rem 1rem;
 }
-.menus .card__description h3,
-.menus .card__description p {
-  margin: 0.5rem;
+.menus .card__description h3 {
+  padding-top: 0.8rem;
+  padding-left: 1rem;
 }
 .menus .card__description p {
-  padding-top: 0.5rem;
+  padding: 0.4rem 0 1rem 0;
+  padding-left: 1rem;
 }
 .menus .card__description i {
   font-size: 2rem;

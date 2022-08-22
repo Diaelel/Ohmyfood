@@ -1,6 +1,7 @@
 @use "../utils/box-shadow.scss";
 @use "../utils/zoom.scss";
 @use "../utils/colors.scss";
+@use "../utils/variables.scss";
 
 .steps {
     padding-top: 2rem;
@@ -26,7 +27,7 @@
         gap: 1.5rem;
         border-radius: 10px;
         padding-top: 7px;
-        @media( min-width: 880px) {
+        @media( min-width: variables.$breakpoint) {
             display: grid;
             grid-template-columns: repeat(3,1fr);
         }
@@ -36,7 +37,7 @@
         display: flex;
         align-items: baseline;
         border: solid 1px colors.$lightgray;
-        padding: 7px 0px;
+        padding: 25px 0px;
         background-color: colors.$lightgray;
         border-radius: 25px;
         @include box-shadow.base-shadow;
