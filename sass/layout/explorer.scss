@@ -1,11 +1,13 @@
 @use "../utils/box-shadow.scss";
 @use "../utils/zoom.scss";
+@use "../utils/colors.scss";
+
 
 
 .explorer__restaurants {
     text-align: center;
     padding: 2rem;
-    background-color: #f7f7f7;
+    background-color: colors.$lightgray;
     padding-bottom: 4.2rem;
 
     &--title {
@@ -15,7 +17,7 @@
     }
 
     &--paragraph {
-    color:#6a6a6a;
+    color: colors.$darkgray;
     margin: 0 0rem 2.7rem 0;
     font-size: 1.1rem;
     }
@@ -26,7 +28,7 @@
     font-weight: 500;
     border-radius: 100px;
     color: #fff;
-    background-color: #686868;
+    background-color: colors.$darkgray;
     background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
     @include box-shadow.base-shadow;
     &:hover {
@@ -34,7 +36,7 @@
         opacity: 1;
         transition-duration: 180ms;
         cursor: pointer;
-        background-color: rgba(240, 228, 255, 0.9);
+        background-color: colors.$gray;
         }
     }
 }
