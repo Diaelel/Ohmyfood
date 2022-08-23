@@ -8,6 +8,7 @@
   font-family: "Shrikhand", "cursive";
   color: white;
   margin: 6px 6px 10px;
+  font-size: large;
 }
 .footer__listing {
   list-style: none;
@@ -24,4 +25,12 @@
 .footer__icon {
   width: 1rem;
   margin-right: 0.5rem;
+}
+
+.fa-utensils {
+  margin-right: 14px;
+}
+
+.fa-handshake-angle {
+  margin-right: 9px;
 }/*# sourceMappingURL=footer.css.map */

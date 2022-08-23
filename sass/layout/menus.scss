@@ -1,5 +1,6 @@
 @use "../utils/variables.scss";
 @use "../utils/colors.scss";
+@use "../utils/mixins.scss";
 
 .menus {
     background-color: #f6f6f6;
@@ -47,24 +48,33 @@
             }
         }
         &__description {
-        position: relative;
-        background-color: white;
-        border-radius: 0 0 1rem 1rem;
+            position: relative;
+            background-color: white;
+            border-radius: 0 0 1rem 1rem;
+            &::before {
+                @include mixins.heart;
+            }
+            &::after {
+                @include mixins.heart;
+                @include mixins.gradient(1);
+                opacity: 0;
+                color: transparent;
+                font-weight: 900;
+
+            }
+            &:hover::after {
+                opacity: 1;
+                transform: translateY(-50%) scale(1.12);
+            }
             h3 {
                 padding-top: 0.8rem;
                 padding-left: 1rem;
+                font-weight: 700;
             }
             p {
                 padding: 0.4rem 0 1rem 0;
                 padding-left: 1rem;
             }
-        }
-        &__description i {
-            font-size: 2rem;
-            position: absolute;
-            right: 1rem;
-            top: 50%;
-            transform: translateY(-50%);
         }
     }
 }

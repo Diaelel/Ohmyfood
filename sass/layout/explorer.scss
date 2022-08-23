@@ -1,8 +1,5 @@
-@use "../utils/box-shadow.scss";
-@use "../utils/zoom.scss";
 @use "../utils/colors.scss";
-
-
+@use "../utils/mixins.scss";
 
 .explorer__restaurants {
     text-align: center;
@@ -29,11 +26,11 @@
     border-radius: 100px;
     color: #fff;
     background-color: colors.$darkgray;
-    background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
-    @include box-shadow.base-shadow;
+    @include mixins.base-shadow;
+    @include mixins.gradient(0.9);
     &:hover {
-        @include zoom.transform-zoom;
-        opacity: 1;
+        @include mixins.transform-zoom;
+        opacity: 0.9;
         transition-duration: 180ms;
         cursor: pointer;
         background-color: colors.$gray;

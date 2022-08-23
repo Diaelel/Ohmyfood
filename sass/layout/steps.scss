@@ -1,5 +1,4 @@
-@use "../utils/box-shadow.scss";
-@use "../utils/zoom.scss";
+@use "../utils/mixins.scss";
 @use "../utils/colors.scss";
 @use "../utils/variables.scss";
 
@@ -40,9 +39,9 @@
         padding: 25px 0px;
         background-color: colors.$lightgray;
         border-radius: 25px;
-        @include box-shadow.base-shadow;
+        @include mixins.base-shadow;
         &:hover {
-            @include zoom.transform-zoom;
+            @include mixins.transform-zoom;
             opacity: 1;
             cursor: pointer;
             transition-duration: 180ms;
