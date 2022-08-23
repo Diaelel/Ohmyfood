@@ -48,24 +48,8 @@
             }
         }
         &__description {
-            position: relative;
+            @include mixins.heart-animated;
             background-color: white;
-            border-radius: 0 0 1rem 1rem;
-            &::before {
-                @include mixins.heart;
-            }
-            &::after {
-                @include mixins.heart;
-                @include mixins.gradient(1);
-                opacity: 0;
-                color: transparent;
-                font-weight: 900;
-
-            }
-            &:hover::after {
-                opacity: 1;
-                transform: translateY(-50%) scale(1.12);
-            }
             h3 {
                 padding-top: 0.8rem;
                 padding-left: 1rem;

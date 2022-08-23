@@ -51,8 +51,8 @@
 }
 .menus .card__description {
   position: relative;
-  background-color: white;
   border-radius: 0 0 1rem 1rem;
+  background-color: white;
 }
 .menus .card__description::before {
   display: inline-block;

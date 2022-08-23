@@ -1,0 +1,232 @@
+.header {
+  box-shadow: 0 0 0.5Srem rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 1000;
+}
+.header__logo {
+  font-family: "Shrikhand", "cursive";
+  text-align: center;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0.25rem 0.25rem 0.5rem #787878;
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.7098039216);
+}
+.footer__logo {
+  font-family: "Shrikhand", "cursive";
+  color: white;
+  margin: 6px 6px 10px;
+  font-size: large;
+}
+.footer__listing {
+  list-style: none;
+  padding-left: 8px;
+  margin: 6px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.footer__link {
+  text-decoration: none;
+  color: white;
+}
+.footer__icon {
+  width: 1rem;
+  margin-right: 0.5rem;
+}
+
+.fa-utensils {
+  margin-right: 14px;
+}
+
+.fa-handshake-angle {
+  margin-right: 9px;
+}
+
+.header {
+  display: flex;
+}
+
+.header__container > a {
+  transform: translate(21px, 19px);
+  font-size: 20px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.menu__all {
+  background-color: #f6f6f6;
+}
+
+.menu img {
+  width: 100%;
+  max-height: 335px;
+  min-height: 263px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 1400px;
+}
+
+.content {
+  font-family: "roboto";
+  background-color: #f6f6f6;
+  border-radius: 2.5rem 2.5rem 0 0;
+  position: relative;
+  margin-top: -3rem;
+}
+
+.containers {
+  border-radius: 4px 4px 0 0;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.title__heart h1 {
+  font-family: "Shrikhand", "cursive";
+  position: relative;
+  margin-left: 10px;
+  font-weight: 300;
+  font-size: 27px;
+  margin-bottom: 30px;
+  transform: translateY(30px);
+  position: relative;
+  border-radius: 0 0 1rem 1rem;
+}
+.title__heart h1::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f004";
+  font-size: 2rem;
+  position: absolute;
+  right: 15.9px;
+  top: 49%;
+  transform: translateY(-50%);
+  color: inherit;
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 1;
+  transition: all 200ms ease-in-out;
+}
+.title__heart h1::after {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f004";
+  font-size: 2rem;
+  position: absolute;
+  right: 15.9px;
+  top: 49%;
+  transform: translateY(-50%);
+  color: inherit;
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 1;
+  transition: all 200ms ease-in-out;
+  background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
+  opacity: 0;
+  color: transparent;
+  font-weight: 900;
+}
+.title__heart h1:hover::after {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.12);
+}
+
+.title__heart i {
+  margin-right: 25px;
+  font-size: 26px;
+  transform: translate3d(10px, 10px, 10px);
+}
+
+.entries__title, .dishes__title, .desserts__title {
+  margin: 8px 0 4px 10px;
+  padding-bottom: 15px;
+  padding-top: 30px;
+}
+
+.entries__title::after, .dishes__title::after, .desserts__title::after {
+  content: "";
+  width: 42px;
+  height: 3px;
+  display: block;
+  position: absolute;
+  background-color: #99E2D0;
+}
+
+.entries__all, .dishes__all, .desserts__all {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.entries__lists, .dishes__lists, .desserts__lists {
+  background-color: white;
+  border-radius: 20px;
+  padding: 4px 25px 10px 12px;
+  box-shadow: 0.1rem 0.1rem 10px rgba(0, 0, 0, 0.13);
+}
+
+.entries__lists--name > p, .dishes__lists--name > p, .desserts__list--name > p {
+  margin: 7px 0 0 0;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.entries__list--detail, .dishes__list--detail, .desserts__list--detail {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 7px;
+}
+
+.entries__list--detail > p, .dishes__list--detail > p, .desserts__list--detail, p {
+  margin: 2px 0 0 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 14.5px;
+}
+
+.entries__list--detail .price, .dishes__list--detail .price, .desserts__list--detail .price {
+  font-weight: bold;
+  padding-left: 16px;
+}
+
+.desserts__lists + .space {
+  margin-bottom: 3rem;
+}
+
+.wrappbtn {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  padding-top: 20px;
+  padding: 0.9rem 2.8rem;
+  font-weight: 500;
+  border-radius: 100px;
+  color: #fff;
+  background-color: #686868;
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  cursor: pointer;
+  transition-duration: 0.25s;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  margin-bottom: 4rem;
+}/*# sourceMappingURL=restaurant.css.map */
