@@ -16,13 +16,20 @@
   margin: 0 auto;
 }
 
-.h2 {
-  padding: 2rem 0;
-  margin: 0;
+.main {
+  padding: 0 7rem;
+}
+@media (max-width: 1000px) {
+  .main {
+    padding: 0 1rem;
+  }
 }
 
+h1,
+h2,
 h3,
-p {
+h4 h5,
+h6, p {
   margin: 0;
 }
 

@@ -2,63 +2,73 @@
 @use "../utils/colors.scss";
 @use "../utils/mixins.scss";
 
-.menus {
-    background-color: #f6f6f6;
-    padding-top: 1.5rem;
-    padding-bottom: 3rem;
-    
-    h2 {
-        margin-left: 22px;
-    }
-
-    .menus__cards {
-        display: grid;
-        gap: 1.3rem;
-        margin-right: 20px;
-        margin-left: 20px;
-        @media (min-width : variables.$breakpoint) {
-            grid-template-columns: repeat(2,1fr);
+#homepage {
+    .menus {
+        background-color: #f6f6f6;
+        padding-top: 1.5rem;
+        padding-bottom: 3.5rem;
+        h2 {
+            margin-left: 22px;
         }
-        .new {
-            position: relative;
+        &__all {
+            background-color: #f6f6f6;
         }
-        .new::before {
-            content: "Nouveau";
-            position: absolute;
-            height: 2rem;
-            width: 5rem;
-            background-color: colors.$color-tertiary;
-            color: darken(colors.$color-tertiary, 50%);
+        img {
+            width: 100%;
+            max-height: 335px;
+            min-height: 263px;
+            object-fit: cover;    
+            max-width: 1400px;
+        }
+        &__cards {
             display: grid;
-            place-items: center;
-            right: 1rem;
-            top: 1rem;
-        }
-    }
-
-    .card {
-        &__image {
-            height: 12rem;
-            background-size: cover;
-            border-radius: 1rem 1rem 0 0;
-        }
-        @for $i from 1 through 4 {
-            &__image-#{$i} {
-                background-image: url("../../assets/menu-#{$i}.jpg");
+            gap: 1.3rem;
+            margin-right: 20px;
+            margin-left: 20px;
+            @media (min-width : variables.$breakpoint) {
+                grid-template-columns: repeat(2,1fr);
+            }
+            .new {
+                position: relative;
+            }
+            .new::before {
+                content: "Nouveau";
+                position: absolute;
+                height: 2rem;
+                width: 5rem;
+                background-color: colors.$color-tertiary;
+                color: darken(colors.$color-tertiary, 50%);
+                display: grid;
+                place-items: center;
+                right: 1rem;
+                top: 1rem;
             }
         }
-        &__description {
-            @include mixins.heart-animated;
-            background-color: white;
-            h3 {
-                padding-top: 0.8rem;
-                padding-left: 1rem;
-                font-weight: 700;
+        
+        .card {
+            &__image {
+                height: 12rem;
+                background-size: cover;
+                border-radius: 1rem 1rem 0 0;
             }
-            p {
-                padding: 0.4rem 0 1rem 0;
-                padding-left: 1rem;
+            @for $i from 1 through 4 {
+                &__image-#{$i} {
+                    background-image: url("../../assets/menu-#{$i}.jpg");
+                }
+            }
+            &__description {
+                @include mixins.heart-animated;
+                background-color: white;
+                h3 {
+                    padding-top: 0.8rem;
+                    padding-left: 1rem;
+                    font-weight: 700;
+                }
+                p {
+                    padding: 0.4rem 0 1rem 0;
+                    padding-left: 1rem;
+                }
             }
         }
-    }
+    }   
 }

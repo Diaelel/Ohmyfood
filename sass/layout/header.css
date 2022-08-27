@@ -10,4 +10,12 @@
   padding-top: 10px;
   padding-bottom: 10px;
   box-shadow: 0.25rem 0.25rem 0.5rem #787878;
+}
+.header__container > a {
+  transform: translate(21px, 19px);
+  font-size: 20px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
 }/*# sourceMappingURL=header.css.map */

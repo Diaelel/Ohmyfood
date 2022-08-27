@@ -6,11 +6,21 @@
     z-index: 1000;
 
     &__logo {
-    font-family: "Shrikhand", "cursive";
-    text-align: center;
-    margin: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    box-shadow: 0.25rem 0.25rem 0.5rem colors.$darkgray;
+        font-family: "Shrikhand", "cursive";
+        text-align: center;
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        box-shadow: 0.25rem 0.25rem 0.5rem colors.$darkgray;
+    }
+
+    &__container > a {
+        transform: translate(21px, 19px);
+        font-size: 20px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
     }
 }   
+
