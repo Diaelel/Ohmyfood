@@ -4,7 +4,14 @@
   padding-bottom: 3.5rem;
 }
 #homepage .menus h2 {
-  margin-left: 22px;
+  margin: 20px 0px 20px 20px;
+}
+@media (min-width: 768px) {
+  #homepage .menus h2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 #homepage .menus__all {
   background-color: #f6f6f6;
@@ -47,6 +54,10 @@
   height: 12rem;
   background-size: cover;
   border-radius: 1rem 1rem 0 0;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
 }
 #homepage .menus .card__image-1 {
   background-image: url("../../assets/menu-1.jpg");
@@ -62,8 +73,9 @@
 }
 #homepage .menus .card__description {
   position: relative;
-  border-radius: 0 0 1rem 1rem;
+  border-radius: 2rem;
   background-color: white;
+  border-radius: 0 0 1.5rem 1.5rem;
 }
 #homepage .menus .card__description::before {
   display: inline-block;
@@ -76,7 +88,7 @@
   content: "\f004";
   font-size: 2rem;
   position: absolute;
-  right: 15.9px;
+  right: 10px;
   top: 49%;
   transform: translateY(-50%);
   color: inherit;
@@ -96,7 +108,7 @@
   content: "\f004";
   font-size: 2rem;
   position: absolute;
-  right: 15.9px;
+  right: 10px;
   top: 49%;
   transform: translateY(-50%);
   color: inherit;
@@ -121,4 +133,20 @@
 #homepage .menus .card__description p {
   padding: 0.4rem 0 1rem 0;
   padding-left: 1rem;
+}
+
+#page-resto h3 {
+  font-weight: 400;
+  position: relative;
+  text-transform: uppercase;
+  margin: 20px 0 15px 12px;
+}
+#page-resto h3::after {
+  content: "";
+  width: 3rem;
+  height: 0.25rem;
+  background-color: #99e2d0;
+  position: absolute;
+  bottom: -7px;
+  left: 0;
 }/*# sourceMappingURL=menus.css.map */

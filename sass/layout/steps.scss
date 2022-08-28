@@ -5,15 +5,18 @@
 .steps {
     padding-top: 2rem;
     padding-bottom: 3.5rem;
-
+    background-color: white;
     &__content {
         max-width: 1400px;
         margin-left: 25px;
         margin-right: 20px;
     }
-
+    h2 {
+        transform: translate(-7px);
+        margin: 10px 0px 25px 0px;
+    }
     &__content > h2 {
-        @media( min-width: 880px) {
+        @media( min-width: variables.$breakpoint) {
             display: flex;
             align-items: center;
             flex-direction: column;

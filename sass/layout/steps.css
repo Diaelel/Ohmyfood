@@ -1,13 +1,18 @@
 .steps {
   padding-top: 2rem;
   padding-bottom: 3.5rem;
+  background-color: white;
 }
 .steps__content {
   max-width: 1400px;
   margin-left: 25px;
   margin-right: 20px;
 }
-@media (min-width: 880px) {
+.steps h2 {
+  transform: translate(-7px);
+  margin: 10px 0px 25px 0px;
+}
+@media (min-width: 768px) {
   .steps__content > h2 {
     display: flex;
     align-items: center;

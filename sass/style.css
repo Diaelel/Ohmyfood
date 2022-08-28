@@ -6,7 +6,8 @@
   box-sizing: border-box;
 }
 
-.body {
+#homepage,
+#page-resto {
   margin: 0 auto;
   font-family: "roboto", sans-serif;
 }
@@ -35,18 +36,25 @@ h6, p {
   margin: 0;
 }
 
-.menu-item__description, .menu-item h4 {
+.menu-item__description h4 {
   font-size: 19px;
 }
-.menu-item__description, .menu-item h4, .menu-item p {
+.menu-item__description h4 p {
+  font-size: 17px;
+}
+.menu-item__description h4__description, .menu-item__description h4 h4, .menu-item__description h4 p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
-.menu a {
+.menus a {
   text-decoration: none;
   color: inherit;
+}
+
+.resto__title h2 {
+  border-radius: 2rem;
 }
 
 .header {
@@ -123,13 +131,18 @@ h6, p {
 .steps {
   padding-top: 2rem;
   padding-bottom: 3.5rem;
+  background-color: white;
 }
 .steps__content {
   max-width: 1400px;
   margin-left: 25px;
   margin-right: 20px;
 }
-@media (min-width: 880px) {
+.steps h2 {
+  transform: translate(-7px);
+  margin: 10px 0px 25px 0px;
+}
+@media (min-width: 768px) {
   .steps__content > h2 {
     display: flex;
     align-items: center;
@@ -193,7 +206,14 @@ h6, p {
   padding-bottom: 3.5rem;
 }
 #homepage .menus h2 {
-  margin-left: 22px;
+  margin: 20px 0px 20px 20px;
+}
+@media (min-width: 768px) {
+  #homepage .menus h2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 #homepage .menus__all {
   background-color: #f6f6f6;
@@ -236,6 +256,10 @@ h6, p {
   height: 12rem;
   background-size: cover;
   border-radius: 1rem 1rem 0 0;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
 }
 #homepage .menus .card__image-1 {
   background-image: url("../../assets/menu-1.jpg");
@@ -251,8 +275,9 @@ h6, p {
 }
 #homepage .menus .card__description {
   position: relative;
-  border-radius: 0 0 1rem 1rem;
+  border-radius: 2rem;
   background-color: white;
+  border-radius: 0 0 1.5rem 1.5rem;
 }
 #homepage .menus .card__description::before {
   display: inline-block;
@@ -265,7 +290,7 @@ h6, p {
   content: "\f004";
   font-size: 2rem;
   position: absolute;
-  right: 15.9px;
+  right: 10px;
   top: 49%;
   transform: translateY(-50%);
   color: inherit;
@@ -285,7 +310,7 @@ h6, p {
   content: "\f004";
   font-size: 2rem;
   position: absolute;
-  right: 15.9px;
+  right: 10px;
   top: 49%;
   transform: translateY(-50%);
   color: inherit;
@@ -310,6 +335,22 @@ h6, p {
 #homepage .menus .card__description p {
   padding: 0.4rem 0 1rem 0;
   padding-left: 1rem;
+}
+
+#page-resto h3 {
+  font-weight: 400;
+  position: relative;
+  text-transform: uppercase;
+  margin: 20px 0 15px 12px;
+}
+#page-resto h3::after {
+  content: "";
+  width: 3rem;
+  height: 0.25rem;
+  background-color: #99e2d0;
+  position: absolute;
+  bottom: -7px;
+  left: 0;
 }
 
 .footer .container {
@@ -362,18 +403,18 @@ body {
   height: 70vh;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center bottom;
-     object-position: center bottom;
 }
 #page-resto .resto__title {
   margin-top: -2rem;
 }
 #page-resto .resto__title h2 {
   font-family: "Shrikhand", "cursive";
-  padding: 2rem 1rem;
+  padding: 2rem 0 2rem 1rem;
   background-color: #f5f5f5;
+  font-size: 1.7rem;
+  font-weight: 600;
   position: relative;
-  border-radius: 0 0 1rem 1rem;
+  border-radius: 2rem;
 }
 #page-resto .resto__title h2::before {
   display: inline-block;
@@ -386,7 +427,7 @@ body {
   content: "\f004";
   font-size: 2rem;
   position: absolute;
-  right: 15.9px;
+  right: 10px;
   top: 49%;
   transform: translateY(-50%);
   color: inherit;
@@ -406,7 +447,7 @@ body {
   content: "\f004";
   font-size: 2rem;
   position: absolute;
-  right: 15.9px;
+  right: 10px;
   top: 49%;
   transform: translateY(-50%);
   color: inherit;
@@ -424,16 +465,17 @@ body {
   transform: translateY(-50%) scale(1.12);
 }
 #page-resto .resto-main {
-  padding: 0 1rem;
+  padding: 0 0.3rem;
 }
 #page-resto .menus {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  margin-top: -18px;
 }
-@media (max-width: 1000px) {
+@media (min-width: 1024px) {
   #page-resto .menus {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
   }
 }
 #page-resto .menus__name {
@@ -456,6 +498,7 @@ body {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  font-weight: 300;
 }
 #page-resto .menus__name .menu-item__price {
   margin-left: auto;
@@ -511,8 +554,7 @@ body {
   display: flex;
   justify-content: center;
 }
-
-.btn {
+.wrappbtn__btn {
   padding-top: 20px;
   padding: 0.9rem 2.8rem;
   font-weight: 500;

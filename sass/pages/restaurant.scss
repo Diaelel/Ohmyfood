@@ -1,5 +1,4 @@
 @use "../utils/mixins.scss";
-// @use "../../sass/layout/header.scss";
 @use "../utils/variables.scss";
 @use "../utils/colors.scss";
 @use "../utils/animations.scss";
@@ -18,30 +17,30 @@ body {
         width: 100%;
         height: 70vh;
         object-fit: cover;
-        object-position: center bottom;
     }
     .resto__title {
         margin-top: -2rem;
         h2 {
             font-family: "Shrikhand", "cursive";
-            padding: 2rem 1rem;    
+            padding: 2rem 0 2rem 1rem;    
             background-color: colors.$lightgray;
+            font-size: 1.7rem;
+            font-weight: 600;
+            // border-radius: 1.5rem 1.5rem 0 0;
             @include mixins.heart-animated
         }
     }
     
-    
     .resto-main {
-        padding: 0 1rem;
+        padding: 0 0.3rem;
     }
     
     .menus {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
-
-        @media (max-width: 1000px) {
-            grid-template-columns: 1fr;
+        margin-top: -18px;
+        @media (min-width : 1024px) {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            column-gap: 1rem;
         }
         &__name {  
             overflow: hidden;
@@ -61,8 +60,8 @@ body {
                     overflow: hidden;
                     white-space: nowrap;
                     text-overflow: ellipsis;
+                    font-weight: 300;
                 }
-                
                 &__price {
                     margin-left: auto;
                     font-weight: 900;
@@ -108,23 +107,21 @@ body {
 .wrappbtn {
     display: flex;
     justify-content: center;
+    &__btn {
+        padding-top: 20px;
+        padding: 0.9rem 2.8rem;
+        font-weight: 500;
+        border-radius: 100px;
+        color: #fff;
+        background-color: #686868;
+        background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+        cursor: pointer;
+        transition-duration: .25s;
+        box-shadow: .25rem .25rem 10px rgba(0,0,0,.25);  
+        margin-bottom: 3.5rem;
+        margin-top: 3rem;
+    }
 }
-
-.btn {
-    padding-top: 20px;
-    padding: 0.9rem 2.8rem;
-    font-weight: 500;
-    border-radius: 100px;
-    color: #fff;
-    background-color: #686868;
-    background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
-    cursor: pointer;
-    transition-duration: .25s;
-    box-shadow: .25rem .25rem 10px rgba(0,0,0,.25);  
-    margin-bottom: 3.5rem;
-    margin-top: 3rem;
-}
-
 
     
   

@@ -6,7 +6,8 @@
   box-sizing: border-box;
 }
 
-.body {
+#homepage,
+#page-resto {
   margin: 0 auto;
   font-family: "roboto", sans-serif;
 }
@@ -35,16 +36,23 @@ h6, p {
   margin: 0;
 }
 
-.menu-item__description, .menu-item h4 {
+.menu-item__description h4 {
   font-size: 19px;
 }
-.menu-item__description, .menu-item h4, .menu-item p {
+.menu-item__description h4 p {
+  font-size: 17px;
+}
+.menu-item__description h4__description, .menu-item__description h4 h4, .menu-item__description h4 p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
-.menu a {
+.menus a {
   text-decoration: none;
   color: inherit;
+}
+
+.resto__title h2 {
+  border-radius: 2rem;
 }/*# sourceMappingURL=base.css.map */

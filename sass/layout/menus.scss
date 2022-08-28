@@ -8,7 +8,12 @@
         padding-top: 1.5rem;
         padding-bottom: 3.5rem;
         h2 {
-            margin-left: 22px;
+            margin: 20px 0px 20px 20px;
+            @media( min-width: variables.$breakpoint) {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }        
         }
         &__all {
             background-color: #f6f6f6;
@@ -50,6 +55,9 @@
                 height: 12rem;
                 background-size: cover;
                 border-radius: 1rem 1rem 0 0;
+                width: 100%;
+                object-fit: cover;
+                background-position: center;
             }
             @for $i from 1 through 4 {
                 &__image-#{$i} {
@@ -59,6 +67,7 @@
             &__description {
                 @include mixins.heart-animated;
                 background-color: white;
+                border-radius: 0 0 1.5rem 1.5rem;
                 h3 {
                     padding-top: 0.8rem;
                     padding-left: 1rem;
@@ -72,3 +81,22 @@
         }
     }   
 }
+
+#page-resto {
+    h3 {
+        font-weight: 400;
+        position: relative;
+        text-transform: uppercase;
+        margin: 20px 0 15px 12px;
+    }
+    h3::after {
+        content: "";
+        width: 3rem;
+        height: 0.25rem;
+        background-color: #99e2d0;
+        position: absolute;
+        bottom: -7px;
+        left: 0;
+    }   
+}
+

@@ -20,7 +20,7 @@
     content: "\f004";
     font-size: 2rem;
     position: absolute;
-    right: 15.9px;
+    right: 10px;
     top: 49%;
     transform: translateY(-50%);
     color: inherit;
@@ -29,10 +29,9 @@
     opacity: 1;
     transition: all 200ms ease-in-out;
 }
-
 @mixin heart-animated {
     position: relative;
-    border-radius: 0 0 1rem 1rem;
+    border-radius: 2rem;
     &::before {
         @include heart;
     }
