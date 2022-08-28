@@ -21,7 +21,7 @@
   border-radius: 100px;
   color: #fff;
   background-color: #787878;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 1px 8px -3px rgba(0, 0, 0, 0.25);
   background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
 }
 .explorer__restaurants--btn:hover {

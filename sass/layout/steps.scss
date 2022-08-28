@@ -39,7 +39,7 @@
         padding: 25px 0px;
         background-color: colors.$lightgray;
         border-radius: 25px;
-        @include mixins.base-shadow;
+        @include mixins.box-shadow;
         &:hover {
             @include mixins.transform-zoom;
             opacity: 1;
