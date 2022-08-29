@@ -20,20 +20,46 @@
     }
 
     &--btn {
-    padding-top: s20px;
-    padding: 0.9rem 1.2rem;
-    font-weight: 500;
-    border-radius: 100px;
-    color: #fff;
-    background-color: colors.$darkgray;
-    @include mixins.box-shadow;
-    @include mixins.gradient(0.9);
-    &:hover {
-        @include mixins.transform-zoom;
-        opacity: 0.9;
-        transition-duration: 180ms;
-        cursor: pointer;
-        background-color: colors.$gray;
+        @include mixins.base-button;
+        &:hover {
+            @include mixins.hover-button;
         }
+    }
+}
+
+.loader {
+    $animation-duration: 1s;
+    $animation-count: 2;
+    position: fixed;
+    display: grid;
+    place-items: center;
+    background-color: #ffffff;
+    height: 100vh;
+    inset: 0;
+    z-index: 1;
+    opacity: 0.9;
+    animation: disappear 200ms $animation-duration * $animation-count forwards;
+    transform-origin: top;
+    &::after {
+        content: "";
+        height: 100px;
+        width: 100px;
+        border-right: 5px solid transparent;
+        border-top: 5px solid colors.$purple;
+        border-radius: 50%;
+        animation: spin $animation-duration ease-in-out;
+        animation-iteration-count: 2;
+    }
+}
+
+@keyframes disapper {
+    to {
+        transform: scale(0);
+    }
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
     }
 }

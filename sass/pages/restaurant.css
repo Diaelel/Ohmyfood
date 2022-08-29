@@ -1,5 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@-webkit-keyframes appear {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 *,
 ::before,
 ::after {
@@ -51,10 +71,6 @@ h6, p {
 .menus a {
   text-decoration: none;
   color: inherit;
-}
-
-.resto__title h2 {
-  border-radius: 2rem;
 }
 
 .footer .container {
@@ -184,7 +200,6 @@ body {
 }
 #page-resto .menus__name {
   overflow: hidden;
-  display: grid;
 }
 #page-resto .menus__name .menu-item {
   background-color: white;
@@ -195,7 +210,28 @@ body {
   white-space: no-wrap;
   text-overflow: ellipsis;
   flex: 1;
+  cursor: pointer;
   box-shadow: 2px 1px 8px -3px rgba(0, 0, 0, 0.25);
+  -webkit-animation: appear 1s;
+          animation: appear 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+#page-resto .menus__name .menu-item:nth-child(1) {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+#page-resto .menus__name .menu-item:nth-child(2) {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+#page-resto .menus__name .menu-item:nth-child(3) {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+#page-resto .menus__name .menu-item:nth-child(4) {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
 }
 #page-resto .menus__name .menu-item__description {
   padding: 1rem;
@@ -259,16 +295,23 @@ body {
   justify-content: center;
 }
 .wrappbtn__btn {
-  padding-top: 20px;
-  padding: 0.9rem 2.8rem;
+  padding-top: s20px;
+  padding: 0.9rem 1.2rem;
   font-weight: 500;
   border-radius: 100px;
   color: #fff;
-  background-color: #686868;
-  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  background-color: #787878;
   cursor: pointer;
-  transition-duration: 0.25s;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 1px 8px -3px rgba(0, 0, 0, 0.25);
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  margin-top: 2.5rem;
   margin-bottom: 3.5rem;
-  margin-top: 3rem;
+  padding: 0.9rem 3rem;
+}
+.wrappbtn__btn:hover {
+  opacity: 1;
+  transition-duration: 180ms;
+  cursor: pointer;
+  background-color: rgba(217, 217, 217, 0.9);
+  transform: scale(1.06);
 }/*# sourceMappingURL=restaurant.css.map */

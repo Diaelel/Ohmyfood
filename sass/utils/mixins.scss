@@ -1,3 +1,5 @@
+@use "./colors.scss";
+
 @mixin gradient($opacity) {
     background-image: linear-gradient(to top,rgba(147,86,220,$opacity),rgba(255,121,218,$opacity));
 }
@@ -6,7 +8,7 @@
 }
 
 @mixin transform-zoom {
-    transform: scale(1.02);
+    transform: scale(1.06);
 }
 
 @mixin heart {
@@ -47,4 +49,24 @@
         opacity: 1;
         transform: translateY(-50%) scale(1.12);
     }
+}
+
+@mixin base-button {
+    padding-top: s20px;
+    padding: 0.9rem 1.2rem;
+    font-weight: 500;
+    border-radius: 100px;
+    color: #fff;
+    background-color: colors.$darkgray;
+    cursor: pointer;
+    @include box-shadow;
+    @include gradient(0.9);
+}
+
+@mixin hover-button {
+    opacity: 1;
+    transition-duration: 180ms;
+    cursor: pointer;
+    background-color: colors.$gray;
+    @include transform-zoom;
 }

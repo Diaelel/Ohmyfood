@@ -42,7 +42,7 @@
   box-shadow: 2px 1px 8px -3px rgba(0, 0, 0, 0.25);
 }
 .steps__list--cards:hover {
-  transform: scale(1.02);
+  transform: scale(1.06);
   opacity: 1;
   cursor: pointer;
   transition-duration: 180ms;
