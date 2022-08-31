@@ -52,12 +52,12 @@
 }
 
 @mixin base-button {
-    padding-top: s20px;
     padding: 0.9rem 1.2rem;
     font-weight: 500;
     border-radius: 100px;
     color: #fff;
     background-color: colors.$darkgray;
+    display: inline-block;
     cursor: pointer;
     @include box-shadow;
     @include gradient(0.9);

@@ -44,11 +44,6 @@ h6, p {
         p {
             font-size: 17px;
         }
-        &__description, h4, p {
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-        }
    }
 }
                   

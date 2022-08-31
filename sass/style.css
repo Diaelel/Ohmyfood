@@ -42,11 +42,6 @@ h6, p {
 .menu-item__description h4 p {
   font-size: 17px;
 }
-.menu-item__description h4__description, .menu-item__description h4 h4, .menu-item__description h4 p {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
 
 .menus a {
   text-decoration: none;
@@ -55,6 +50,8 @@ h6, p {
 
 .header {
   box-shadow: 0 0 0.5Srem rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 1000;
 }
 .header__logo {
   font-family: "Shrikhand", "cursive";
@@ -105,12 +102,12 @@ h6, p {
   font-size: 1.1rem;
 }
 .explorer__restaurants--btn {
-  padding-top: s20px;
   padding: 0.9rem 1.2rem;
   font-weight: 500;
   border-radius: 100px;
   color: #fff;
   background-color: #787878;
+  display: inline-block;
   cursor: pointer;
   box-shadow: 2px 1px 8px -3px rgba(0, 0, 0, 0.25);
   background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
@@ -149,13 +146,13 @@ h6, p {
           animation-iteration-count: 2;
 }
 
-@-webkit-keyframes disapper {
+@-webkit-keyframes disappear {
   to {
     transform: scale(0);
   }
 }
 
-@keyframes disapper {
+@keyframes disappear {
   to {
     transform: scale(0);
   }
@@ -177,8 +174,9 @@ h6, p {
 }
 .steps__content {
   max-width: 1400px;
-  margin-left: 25px;
-  margin-right: 20px;
+  padding-left: 25px;
+  padding-right: 20px;
+  margin: 0 auto;
 }
 .steps h2 {
   transform: translate(-7px);
@@ -395,7 +393,7 @@ h6, p {
   left: 0;
 }
 
-.footer .container {
+.footer__container {
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -583,6 +581,12 @@ body {
   text-overflow: ellipsis;
   font-weight: 300;
 }
+#page-resto .menus__name .menu-item__description h4,
+#page-resto .menus__name .menu-item__description p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 #page-resto .menus__name .menu-item__price {
   margin-left: auto;
   font-weight: 900;
@@ -638,12 +642,12 @@ body {
   justify-content: center;
 }
 .wrappbtn__btn {
-  padding-top: s20px;
   padding: 0.9rem 1.2rem;
   font-weight: 500;
   border-radius: 100px;
   color: #fff;
   background-color: #787878;
+  display: inline-block;
   cursor: pointer;
   box-shadow: 2px 1px 8px -3px rgba(0, 0, 0, 0.25);
   background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));

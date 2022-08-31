@@ -240,6 +240,12 @@ body {
   text-overflow: ellipsis;
   font-weight: 300;
 }
+#page-resto .menus__name .menu-item__description h4,
+#page-resto .menus__name .menu-item__description p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 #page-resto .menus__name .menu-item__price {
   margin-left: auto;
   font-weight: 900;

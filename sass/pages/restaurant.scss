@@ -67,6 +67,12 @@ body {
                     white-space: nowrap;
                     text-overflow: ellipsis;
                     font-weight: 300;
+                    h4, 
+                    p {
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
                 }
                 &__price {
                     margin-left: auto;
