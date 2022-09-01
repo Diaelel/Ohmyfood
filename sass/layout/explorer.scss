@@ -40,6 +40,7 @@
     opacity: 0.9;
     animation: disappear 200ms $animation-duration * $animation-count forwards;
     transform-origin: top;
+    cursor: wait;
     &::after {
         content: "";
         height: 100px;

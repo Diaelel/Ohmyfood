@@ -62,18 +62,19 @@ h6, p {
 .menu-item__description h4 p {
   font-size: 17px;
 }
-.menu-item__description h4__description, .menu-item__description h4 h4, .menu-item__description h4 p {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
 
 .menus a {
   text-decoration: none;
   color: inherit;
 }
+.menus a:hover {
+  opacity: 1;
+  transition-duration: 180ms;
+  cursor: pointer;
+  transform: scale(1.02);
+}
 
-.footer .container {
+.footer__container {
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -207,7 +208,7 @@ body {
   overflow: hidden;
   margin: 0.5rem;
   border-radius: 1rem;
-  white-space: no-wrap;
+  white-space: nowrap;
   text-overflow: ellipsis;
   flex: 1;
   cursor: pointer;
@@ -267,7 +268,7 @@ body {
   display: grid;
   place-items: center;
   background: white;
-  aspect-ratio: 1;
+  height: 2rem;
   width: 2rem;
   border-radius: 1rem;
   color: #99e2d0;
@@ -301,12 +302,12 @@ body {
   justify-content: center;
 }
 .wrappbtn__btn {
-  padding-top: s20px;
   padding: 0.9rem 1.2rem;
   font-weight: 500;
   border-radius: 100px;
   color: #fff;
   background-color: #787878;
+  display: inline-block;
   cursor: pointer;
   box-shadow: 2px 1px 8px -3px rgba(0, 0, 0, 0.25);
   background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
@@ -318,6 +319,7 @@ body {
   opacity: 1;
   transition-duration: 180ms;
   cursor: pointer;
+  box-shadow: 0px 10px 9px -2px rgba(0, 0, 0, 0.4);
   background-color: rgba(217, 217, 217, 0.9);
   transform: scale(1.06);
 }/*# sourceMappingURL=restaurant.css.map */

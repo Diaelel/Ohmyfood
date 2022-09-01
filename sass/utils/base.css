@@ -46,4 +46,10 @@ h6, p {
 .menus a {
   text-decoration: none;
   color: inherit;
+}
+.menus a:hover {
+  opacity: 1;
+  transition-duration: 180ms;
+  cursor: pointer;
+  transform: scale(1.02);
 }/*# sourceMappingURL=base.css.map */
