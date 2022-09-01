@@ -282,6 +282,11 @@ h6, p {
      object-fit: cover;
   max-width: 1400px;
 }
+@media (min-width: 768px) {
+  #homepage .menus img {
+    min-height: 245px;
+  }
+}
 #homepage .menus__cards {
   display: grid;
   gap: 1.3rem;
@@ -334,7 +339,7 @@ h6, p {
   content: "\f004";
   font-size: 2rem;
   position: absolute;
-  right: 10px;
+  right: 30px;
   top: 49%;
   transform: translateY(-50%);
   color: inherit;
@@ -354,7 +359,7 @@ h6, p {
   content: "\f004";
   font-size: 2rem;
   position: absolute;
-  right: 10px;
+  right: 30px;
   top: 49%;
   transform: translateY(-50%);
   color: inherit;
@@ -469,12 +474,18 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media (min-width: 768px) {
+  #page-resto .resto__content {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
 #page-resto .resto__title {
   margin-top: -2rem;
 }
 #page-resto .resto__title h2 {
   font-family: "Shrikhand", "cursive";
-  padding: 2rem 0 2rem 1rem;
+  padding: 2rem 0 2rem 2rem;
   background-color: #f5f5f5;
   font-size: 1.7rem;
   font-weight: 600;
@@ -492,7 +503,7 @@ body {
   content: "\f004";
   font-size: 2rem;
   position: absolute;
-  right: 10px;
+  right: 30px;
   top: 49%;
   transform: translateY(-50%);
   color: inherit;
@@ -512,7 +523,7 @@ body {
   content: "\f004";
   font-size: 2rem;
   position: absolute;
-  right: 10px;
+  right: 30px;
   top: 49%;
   transform: translateY(-50%);
   color: inherit;

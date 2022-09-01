@@ -24,6 +24,11 @@
      object-fit: cover;
   max-width: 1400px;
 }
+@media (min-width: 768px) {
+  #homepage .menus img {
+    min-height: 245px;
+  }
+}
 #homepage .menus__cards {
   display: grid;
   gap: 1.3rem;
@@ -76,7 +81,7 @@
   content: "\f004";
   font-size: 2rem;
   position: absolute;
-  right: 10px;
+  right: 30px;
   top: 49%;
   transform: translateY(-50%);
   color: inherit;
@@ -96,7 +101,7 @@
   content: "\f004";
   font-size: 2rem;
   position: absolute;
-  right: 10px;
+  right: 30px;
   top: 49%;
   transform: translateY(-50%);
   color: inherit;

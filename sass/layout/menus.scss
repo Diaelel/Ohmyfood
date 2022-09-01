@@ -24,6 +24,9 @@
             min-height: 200px;
             object-fit: cover;    
             max-width: 1400px;
+            @media (min-width: variables.$breakpoint) {
+                min-height: 245px;
+            }
         }
         &__cards {
             display: grid;

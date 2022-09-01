@@ -18,11 +18,17 @@ body {
         height: 70vh;
         object-fit: cover;
     }
+    .resto__content {
+        @media (min-width: variables.$breakpoint) {
+            margin-left: 3rem;
+            margin-right: 3rem;
+        }
+    }
     .resto__title {
         margin-top: -2rem;
         h2 {
             font-family: "Shrikhand", "cursive";
-            padding: 2rem 0 2rem 1rem;    
+            padding: 2rem 0 2rem 2rem;    
             background-color: colors.$lightgray;
             font-size: 1.7rem;
             font-weight: 600;
