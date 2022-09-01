@@ -18,8 +18,8 @@
 }
 #homepage .menus img {
   width: 100%;
-  max-height: 335px;
-  min-height: 263px;
+  max-height: 325px;
+  min-height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
   max-width: 1400px;
@@ -52,24 +52,12 @@
 }
 #homepage .menus .card__image {
   height: 12rem;
-  background-size: cover;
-  border-radius: 1rem 1rem 0 0;
   width: 100%;
+  border: 0 solid transparent;
+  border-radius: 1rem 1rem 0 0;
+  box-shadow: none;
   -o-object-fit: cover;
      object-fit: cover;
-  background-position: center;
-}
-#homepage .menus .card__image-1 {
-  background-image: url("/assets/menu-1.jpg");
-}
-#homepage .menus .card__image-2 {
-  background-image: url("/assets/menu-2.jpg");
-}
-#homepage .menus .card__image-3 {
-  background-image: url("/assets/menu-3.jpg");
-}
-#homepage .menus .card__image-4 {
-  background-image: url("/assets/menu-4.jpg");
 }
 #homepage .menus .card__description {
   position: relative;
